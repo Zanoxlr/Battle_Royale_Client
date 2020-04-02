@@ -312,7 +312,6 @@ CGINCLUDE
 		
 		half3 worldSpaceVertex = mul(unity_ObjectToWorld, v.vertex).xyz;
 		half2 tileableUv = worldSpaceVertex.xz;
-
 		o.bumpCoords.xyzw = (tileableUv.xyxy + _Time.xxxx * _BumpDirection.xyzw) * _BumpTiling.xyzw;
 
 		o.viewInterpolator.xyz = worldSpaceVertex-_WorldSpaceCameraPos;
@@ -350,7 +349,7 @@ ENDCG
 
 Subshader
 {
-	Tags {"RenderType"="Transparent" "Queue"="Transparent - 200" }
+	Tags {"RenderType"="Transparent" }
 	
 	Lod 500
 	ColorMask RGB
@@ -381,7 +380,7 @@ Subshader
 
 Subshader
 {
-	Tags {"RenderType"="Transparent" "Queue" = "Transparent-200"}
+	Tags {"RenderType"="Transparent"}
 	
 	Lod 300
 	ColorMask RGB
@@ -410,7 +409,7 @@ Subshader
 
 Subshader
 {
-	Tags {"RenderType"="Transparent" "Queue" = "Transparent-200"}
+	Tags {"RenderType"="Transparent"}
 	
 	Lod 200
 	ColorMask RGB

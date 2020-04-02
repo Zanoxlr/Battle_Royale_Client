@@ -22,15 +22,15 @@ namespace UnityStandardAssets.Water
         {
             if (waterQuality > WaterQuality.Medium)
             {
-                sharedMaterial.shader.maximumLOD = 501;
+                sharedMaterial.shader.maximumLOD = 500;
             }
             else if (waterQuality > WaterQuality.Low)
             {
-                sharedMaterial.shader.maximumLOD = 301;
+                sharedMaterial.shader.maximumLOD = 500;
             }
             else
             {
-                sharedMaterial.shader.maximumLOD = 201;
+                sharedMaterial.shader.maximumLOD = 501;
             }
 
             // If the system does not support depth textures (ie. NaCl), turn off edge bleeding,

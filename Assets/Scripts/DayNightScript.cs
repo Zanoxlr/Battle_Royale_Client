@@ -18,5 +18,4 @@ public class DayNightScript : MonoBehaviour
         gameObject.transform.Rotate(0.5f * Time.deltaTime, 0, 0);
         Moon.transform.Rotate(0.5f * Time.deltaTime, 0, 0);
     }
-
 }
